@@ -7,6 +7,8 @@ export interface DimensionObject {
     y: number;
     right: number;
     bottom: number;
+    clientHeight: number;
+    clientWidth: number;
 }
 
 export type UseDimensionsHook = [

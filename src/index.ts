@@ -12,7 +12,9 @@ function getDimensionObject(node: HTMLElement): DimensionObject {
         x: "x" in rect ? rect.x : rect.left,
         y: "y" in rect ? rect.y : rect.top,
         right: rect.right,
-        bottom: rect.bottom
+        bottom: rect.bottom,
+        clientHeight: node.clientHeight,
+        clientWidth: node.clientWidth,
     };
 }
 
